@@ -1,5 +1,7 @@
 # Restaurant Finder
 Tiny tool to help you find a restaurant in an instant.
+It uses [google geocoding api](https://developers.google.com/maps/documentation/geocoding/start) and [zomato api](https://developers.zomato.com/api)
+to fetch the data in real time.
 
 # How to run it
 1. Clone the repo
@@ -14,9 +16,11 @@ virtualenv venv
 source venv/bin/activate
 ```
 
-3. Install dependencies
+3. Install dependencies & set environment variables
 ```
 pip install -r requirements.txt
+export MAPS_API_KEY="<your-google-maps-api-key>"
+export ZOMATO_API_KEY="<your-zomato-api-key>"
 ```
 
 4. Run the tool
@@ -140,3 +144,14 @@ Find on Zomato: https://www.zomato.com/bangalore/sriracha-robata-contemporary-pa
 Address: 608, 12th Main Road, HAL, 2nd Stage, Indiranagar, Bangalore
 Find on Maps: https://maps.google.com/?q=608+12th+Main+Road+HAL+2nd+Stage+Indiranagar+Bangalore
 ```
+
+# Topics Covered
+
+- input
+- data type
+- array
+- dictionary
+- string manipulation
+- functions
+- loops
+- http calls

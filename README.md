@@ -4,6 +4,7 @@ Tiny tool to help you find a restaurant in an instant.
 # How to run it
 1. Clone the repo
 ```
+git clone git@github.com:abhisekpadhi/restaurant-finder.git
 ```
 
 2. Setup virtualenv

@@ -71,7 +71,10 @@ if __name__ == '__main__':
     print('Here is the best restaurant we found for you:\n')
     search_results = search_restaurant(city_id, cuisine_ids)
     best_restaurants = get_best_restaurants(search_results)
-    print('Name: ' + best_restaurants[0]['restaurant']['name'])
-    print('Find on Zomato: ' + best_restaurants[0]['restaurant']['url'])
-    print('Address: ' + best_restaurants[0]['restaurant']['location']['address'])
-    print('Find on Maps: ' + get_google_maps_url(best_restaurants[0]['restaurant']['location']['address']))
+    if best_restaurants:
+        print('Name: ' + best_restaurants[0]['restaurant']['name'])
+        print('Find on Zomato: ' + best_restaurants[0]['restaurant']['url'])
+        print('Address: ' + best_restaurants[0]['restaurant']['location']['address'])
+        print('Find on Maps: ' + get_google_maps_url(best_restaurants[0]['restaurant']['location']['address']))
+    else:
+        print('No good restaurants found. Try with another cusine or location.')
